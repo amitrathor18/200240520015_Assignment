@@ -1,0 +1,19 @@
+Q1.
+select * from orders
+where odate = '1990-10-03' or odate = '1990-10-04';
+
+Q2.
+select * from customers c , salespeople s 
+where c.snum=s.snum And (s.sname='Peel' or s.sname='Motika');
+
+Q3.
+select * from customers
+where cname between 'A' and 'G';
+
+Q4.
+select * from customers
+where cname like "c%";
+
+Q5.
+select * from orders
+where amt != 0 or amt = null;

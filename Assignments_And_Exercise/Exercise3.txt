@@ -1,0 +1,27 @@
+Q1. Display all the Supplier names with the initial letter capital. 
+mysql> update supplier set sname = concat(ucase(left(sname,1)),lcase(substring(sname,2)));
+
+Q2. Display all the Supplier names in upper case. 
+mysql> select upper(sname) from supplier;
+
+Q3. Display all the Supplier names in lower case. 
+mysql> select lower(sname) from supplier;
+
+Q4. Display all the Supplier names padded to 25 characters, with spaces on the left. 
+mysql> select lpad (sname,25,' ') from supplier;
+
+Q5. Display all the Supplier names (with ‘la’ replaced by ‘ro’).
+mysql> select replace (sname,'la','ro') from supplier;
+
+Q6. Implement the above command such that ‘l’ is replaced with ‘r’ and ‘a’ is replaced 
+with ‘o’. 
+mysql> select sname, replace(replace(sname,'l','r'),'a','o') from s
+
+Q7. Display the Supplier names and the lengths of the names. 
+mysql> select length(sname) from supplier;
+
+Q8. Use the soundex function to search for a supplier by the name of ‘BLOKE’. 
+mysql> select * from supplier
+    -> where soundex(sname) = soundex('blocke');
+
+

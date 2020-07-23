@@ -1,0 +1,27 @@
+Q1.
+mysql> select * from supplier
+    -> order by CITY;
+
+Q2.
+mysql> select * from supplier
+    -> order by city , Part_Name;
+
+Q3.
+mysql> select * from supplier
+    -> where status between 10 and 20;
+
+Q4.
+mysql> select parts and weight from suppiler
+    -> where range >10 and range < 15;
+
+Q5.
+mysql> select part from suppiler
+    -> where part like '%S';
+
+Q6.
+mysql> select * from suppiler
+    -> where cities like '%L';
+
+Q7.
+mysql> select * from project
+    -> where JNAME like '__%n';

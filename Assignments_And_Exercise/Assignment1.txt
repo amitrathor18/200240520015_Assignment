@@ -1,0 +1,141 @@
+
+mysql> create table salespeople(
+    -> sum int,
+    -> sname varchar(10),
+    -> city varchar(10),
+    -> comm float(3,2)
+    -> );
+mysql> insert into salespeople
+    -> values (1001,'Peel','London',.12);
+
+mysql> insert into salespeople
+    -> values (1002, 'Serres', 'Sab Jose' , .13),
+    -> (1004,'Motika','London',.11);
+
+
+mysql> insert into salespeople
+    -> values ( 1007, 'Rifkin','Barcelona',.15),
+    -> (1003,'Axelrod','New York',.10);
+
+mysql> select * from salespeople;
++------+---------+-----------+------+
+| sum  | sname   | city      | comm |
++------+---------+-----------+------+
+| 1001 | Peel    | London    | 0.12 |
+| 1002 | Serres  | Sab Jose  | 0.13 |
+| 1004 | Motika  | London    | 0.11 |
+| 1007 | Rifkin  | Barcelona | 0.15 |
+| 1003 | Axelrod | New York  | 0.10 |
++------+---------+-----------+------+
+
+
+mysql> create table customers(
+    -> cnum int,
+    -> cname varchar(10),
+    -> city varchar(10),
+    -> rating int,
+    -> snum int
+    -> );
+
+mysql> insert into customers
+    -> values(2001,'Hoffman','London',100,1001);
+
+
+mysql> insert into customers
+    -> values(2002,'Giovanni','Rome',200,1003);
+
+
+mysql> insert into customers
+    -> values(2003,'Liu','San Jose',200,1002);
+
+
+mysql> insert into customers
+    -> values(2004,'Grass','Berlin',300,1002);
+
+
+mysql> insert into customers
+    -> values(2006,'Clemens','London',100,1001);
+
+
+mysql> insert into customers
+    -> values(2008,'Cisneros','San Jose',300,1007);
+
+
+mysql> insert into customers
+    -> values(2007,'Pereira','Rome',100,1004);
+
+mysql> select * from customers
+    -> ;
++------+----------+----------+--------+-------+
+| cnum | cname    | city     | rating | snum  |
++------+----------+----------+--------+-------+
+| 2001 | Hoffman  | London   |    100 | 10001 |
+| 2002 | Giovanni | Rome     |    200 |  1003 |
+| 2003 | Liu      | San Jose |    200 |  1002 |
+| 2004 | Grass    | Berlin   |    300 |  1002 |
+| 2006 | Clemens  | London   |    100 |  1001 |
+| 2008 | Cisneros | San Jose |    300 |  1007 |
+| 2007 | Pereira  | Rome     |    100 |  1004 |
++------+----------+----------+--------+-------+
+
+
+mysql> create table orders(
+    -> onum int,
+    -> amt float(7,2),
+    -> odate date,
+    -> cnum int,
+    -> snum int
+    -> );
+
+mysql> insert into orders
+    -> values(3001,18.69,'1990-10-03',2008,1007);
+Query OK, 1 row affected (0.30 sec)
+
+mysql> insert into orders
+    -> values(3003,767.19,'1990-10-03',2001,1001);
+Query OK, 1 row affected (0.17 sec)
+
+mysql> insert into orders
+    -> values(3002,1900.10,'1990-10-03',2007,1004);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into orders
+    -> values(3005,5160.45,'1990-10-03',2003,1002);
+Query OK, 1 row affected (0.18 sec)
+
+mysql> insert into orders
+    -> values(3006,1098.16,'1990-10-03',2008,1007);
+Query OK, 1 row affected (0.17 sec)
+
+mysql> insert into orders
+    -> values(3007,75.75,'1990-10-04',2004,1002);
+Query OK, 1 row affected (0.13 sec)
+
+mysql> insert into orders
+    -> values(3008,4723.00,'1990-10-05',2006,1001);
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into orders
+    -> values(3010,1309.95,'1990-10-06',2004,1002);
+Query OK, 1 row affected (0.16 sec)
+
+mysql> insert into orders
+    ->  values(3011,9891.88,'1990-10-06',2006,1001);
+Query OK, 1 row affected (0.15 sec)
+
+mysql> select * from orders
+    -> ;
++------+---------+------------+------+------+
+| onum | amt     | odate      | cnum | snum |
++------+---------+------------+------+------+
+| 3001 |   18.69 | 1990-10-03 | 2008 | 1007 |
+| 3003 |  767.19 | 1990-10-03 | 2001 | 1001 |
+| 3002 | 1900.10 | 1990-10-03 | 2007 | 1004 |
+| 3005 | 5160.45 | 1990-10-03 | 2003 | 1002 |
+| 3006 | 1098.16 | 1990-10-03 | 2008 | 1007 |
+| 3007 |   75.75 | 1990-10-04 | 2004 | 1002 |
+| 3008 | 4723.00 | 1990-10-05 | 2006 | 1001 |
+| 3010 | 1309.95 | 1990-10-06 | 2004 | 1002 |
+| 3011 | 9891.88 | 1990-10-06 | 2006 | 1001 |
++------+---------+------------+------+------+
+9 rows in set (0.00 sec)

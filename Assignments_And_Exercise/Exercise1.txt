@@ -1,0 +1,130 @@
+Q1.
+mysql> create table semp(
+    -> empno char(4),
+    -> empname char(20),
+    -> basic float(9,2),
+    -> deptno char(2),
+    -> depthead char(4)
+    -> );
+
+Q2.
+mysql> create table sdept(
+    -> deptno char(2),
+    -> deptname char(15)
+    -> );
+
+Q3.
+
+mysql> insert into sdept
+    -> values(10,'Development'),
+    -> (20,'Training');
+
+Q4.
+mysql> insert into semp
+    -> values (1001,'SUNIL',6000,10,null);
+
+mysql> insert into semp
+    -> values(0002, 'HIREN', 8000, 20, null);
+Query OK, 1 row affected (0.14 sec)
+
+mysql> insert into semp
+    -> values(0003, 'ALI', 4000, 10, 0001 );
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into semp
+    -> values(0004, 'GEORGE', 6000,null, 0002 );
+Query OK, 1 row affected (0.12 sec)
+
+mysql> create table s
+    ->(
+    ->`s#`int(4),
+    ->Sname varchar(10),
+    ->status char(10),
+    ->city varchar(10)
+    ->);
+Query OK, 0 rows affected, 1 warning (1.03 sec)
+
+mysql> create table p
+    ->(
+    ->p#` int(4),
+    ->Pname varchar(10),
+    ->color varchar(10),
+    ->weight float(7,2),
+    ->city varchar(10)
+    ->);
+Query OK, 0 rows affected, 2 warnings (1.90 sec)
+
+mysql> create table j
+    ->(
+    ->`j#` int(4),
+    ->jname varchar(10),
+    ->city varchar(10)
+    ->);
+Query OK, 0 rows affected, 1 warning (1.44 sec)
+
+mysql>
+mysql>  create table spj
+    ->(
+    ->`s#` int(4),
+    ->`p#` int(4),
+    ->`j#` int(4),
+    -> qty float(7,2)
+    -> );
+
+
+Q5.
+mysql> select * from s;
+Empty set (0.33 sec)
+
+Q6.
+mysql> select `s#`,sname from s;
+Empty set (0.04 sec)
+
+Q7.
+mysql> select pname,color from p where CITY='London';
+Empty set (0.00 sec)
+
+mysql> select * from s where CITY='Paris' or CITY='Athens';
+Empty set (0.15 sec)
+
+Q8.
+mysql> select * from s where CITY='London';
+
+Q9.
+mysql> select * from s where CITY='Paris' or CITY='Athens'
+
+Q10.
+mysql>  select * from j where CITY='Athens';
+Empty set (0.00 sec)
+
+Q11.
+mysql>  select Pname,weight from p where weight between 12 and 14;
+Empty set (0.02 sec)
+
+Q12.
+mysql>  select * from s where status>=20;
+Empty set (0.01 sec)
+
+
+Q13.
+mysql> select * from s where city!='London';
+Empty set (0.00 sec)
+
+Q14.
+mysql> select city from s;
+Empty set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

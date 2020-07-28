@@ -1,0 +1,78 @@
+1) Which of these views are updateable (will allow DML operations)?
+query 1)
+CREATE VIEW Dailyorders AS
+SELECT DISTINCT cnum, snum, onum, odate
+FROM Orders;
+ Ans: yes
+
+
+query 2)
+CREATE VIEW Custotals AS
+SELECT cname,
+       SUM (amt) Sum_Amt
+FROM Orders,
+     Customers
+WHERE Orders.cnum=Customers.cnum
+GROUP BY cname;
+
+SELECT * FROM commission;
+
+ Ans:
+ Views are note updatable which consists of join.
+ 
+ 
+query 3)
+CREATE VIEW Thirdorders AS
+SELECT *
+FROM Dailyorders
+WHERE odate='03-OCT-1990';
+
+Ans: not updatable due to distinct keyword in dailyorders;
+
+
+query 4)
+CREATE VIEW Nullcities AS
+SELECT snum,
+       sname,
+       city
+FROM Salespeople
+WHERE city IS NULL
+  OR sname BETWEEN ‘A’ AND ‘M’;
+
+Ans:yes
+
+2) Create a view of the Salespeople table called Commissions. 
+This view will include only the snum and comm fields. Through this view, 
+someone could enter or change commissions, but only to values between .10 and .20.
+query:-	
+CREATE VIEW commission AS
+SELECT snum,
+       comm
+FROM salespeople
+WHERE comm BETWEEN .10 AND .20;
+
+SELECT * FROM commission;
+
+INSERT INTO commission
+VALUES(3000,.4);
+
+SELECT * FROM commission;
+
+SELECT * FROM salespeople;
+
+
+3) Some SQL implementations have a built-in constant representing the current date,
+sometimes called “CURDATE” or “SYSDATE”. The word CURDATE can
+therefore be used in a SQL statement, and be replaced by the current date when
+the value is accessed by commands such as Select or Insert. We will use a view of
+the Orders table called Entryorders to insert rows into the Orders table. Create the
+Orders table, so that CURDATE is automatically inserted for odate if no value is
+given. Then create the Entryorders view so that no values can be given.
+
+Note:
+Suppose if you have a view named view1 on table t
+And if you apply another view on this view named view2
+And now if you make update on view 2 then it will be made on the table t;
+
+But remember if you have used distinct keyword in base view then the identifier in view2
+will be virtual view and they will not allow to update.

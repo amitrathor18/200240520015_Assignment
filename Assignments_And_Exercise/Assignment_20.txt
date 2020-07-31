@@ -69,10 +69,16 @@ the Orders table called Entryorders to insert rows into the Orders table. Create
 Orders table, so that CURDATE is automatically inserted for odate if no value is
 given. Then create the Entryorders view so that no values can be given.
 
-Note:
-Suppose if you have a view named view1 on table t
-And if you apply another view on this view named view2
-And now if you make update on view 2 then it will be made on the table t;
+query:-	
+	create table ORDERSnew
+(
+	Onum INT(4),
+	Amt FLOAT(7,2),
+	Odate DATE default CURRENT_TIMESTAMP,
+	Cnum INT(4),
+	Snum INT(4),
+    constraint pk_onum primary key(onum)
+);
 
-But remember if you have used distinct keyword in base view then the identifier in view2
-will be virtual view and they will not allow to update.
+create view Entryorders as 
+select * from ORDERSnew;

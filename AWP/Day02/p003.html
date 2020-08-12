@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_flex</title>
+    <style>
+        html,body{
+            margin: 0px;
+        }
+        .nav{
+            display: flex;
+            background-color: rgba(44, 65, 23, 0.219));
+            height: 70px;
+            padding: 5px;
+            border: 5px solid black;
+        }
+        .logo{
+            font-size: 30px;
+            border: 5px solid black;
+            padding: 5px;
+            margin: 10px;
+            background-color:  rgba(224, 184, 95, 0.219);
+            flex: 1;
+            align-items: center;
+        }
+        .buttons{
+            font-size: 30px;
+            border: 5px solid black;
+            padding: 5px;
+            margin: 10px;
+            background-color:burlywood;
+            background-color:cadetblue ;
+            flex:2;
+            border-radius: 8px;
+            justify-content: left;;
+        }
+        .page{
+            display: flex;
+            background-color: rgba(44, 65, 23, 0.219);
+            height: 70vh;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .sidebar{
+            font-size: 30px;
+            border: 5px solid black;
+            padding: 5px;
+            margin: 10px;
+            background-color:burlywood;
+            background-color:cadetblue ;
+            flex:1;
+            align-items: center;
+            justify-content: bottom ;
+            border-radius: 8px;
+        }
+        .middle_bar{
+            font-size: 30px;
+            border: 5px solid black;
+            padding: 5px;
+            margin: 10px;
+            background-color: rgb(58, 3, 3);
+            flex: 5;
+            align-items: center;
+            border-radius: 8px;
+
+        }
+        .footar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cyan;
+            height: 15vh;  border-radius: 8px;
+        }
+        .fot_text{
+            font-size: 12;
+            
+            font-family: cursive;
+            color: coral;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="nav" >
+        <div class="logo"  >Amit</div>
+        <div class="buttons" >Home</div>
+        <div class="buttons" >Menu</div>
+    </div>
+    <div class="page">
+        <div  class="sidebar"></div>
+        <div class="middle_bar"></div>
+        <div class="sidebar"></div>
+
+    </div>
+    <div class="footar">
+        <div class="fot_data">
+            @Amit's page
+        </div>
+    </div>
+    
+</body>
+</html>

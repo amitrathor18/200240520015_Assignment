@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+}
+
+.whole11111 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: aquamarine;
+  background: url("b333.jpg");
+  background-color: rgba(17, 17, 17, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+.whole {
+  background-color: black;
+  height: 100vh;
+  border: blue 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.A {
+  background-color: blanchedalmond;
+  height: 40vh;
+  width: 30vw;
+  border: 5px solid rgb(155, 79, 17);
+
+  display: flex;
+}
+
+.box {
+  border: rgb(122, 28, 28) solid 2px;
+  background-color: rgba(43, 44, 46, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

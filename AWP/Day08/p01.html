@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        margin: 3px;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        border: rgb(119, 156, 15) 3px solid;
+        justify-content: flex-start;
+        padding: 2px;
+      }
+      .n {
+        flex: 1;
+        background-color: rgb(230, 116, 11);
+        margin: 2px;
+        color: rgba(44, 31, 4, 0.815);
+        font-family: cursive;
+        font-size: 20px;
+      }
+      .b {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      #like,
+      #Dislike,
+      #comment {
+        font-weight: bold;
+      }
+      #Com {
+        border-bottom: dashed rgb(49, 36, 3) 1px;
+      }
+    </style>
+    <script src="p01.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="b" style="display: flex;">
+        <div class="n">Home</div>
+        <div class="n">About us</div>
+        <div class="n">Sign up</div>
+      </div>
+    </div>
+    <div class="a">
+      <div>
+        <input id="inp" type="text" />
+        <button onclick="comment()" id="comment">Comment</button>
+      </div>
+      <div>
+        <button onclick="like()" id="like">Like</button>
+        <button onclick="Dislike()" id="Dislike">Dislike</button>
+      </div>
+      <div id="cb">
+        <div id="Com">comment 01</div>
+      </div>
+    </div>
+  </body>
+</html>

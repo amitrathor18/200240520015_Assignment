@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .setup-main-container {
+        color: white;
+        height: 80vh;
+        margin: 2%;
+        border: 3px solid white;
+        border-radius: 40px;
+        background-color: rgba(252, 247, 247, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .setup-section-heading {
+        flex: 1;
+        background-color: black;
+        width: 40%;
+      }
+
+      .individual-component-container {
+        flex: 3;
+        display: flex;
+        width: 90%;
+        background-color: blueviolet;
+      }
+
+      .setup-individual-component1 {
+        flex: 1;
+        background-color: chartreuse;
+        height: 90%;
+      }
+      .setup-individual-component2 {
+        flex: 1;
+        background-color: maroon;
+        height: 90%;
+      }
+      .setup-individual-component3 {
+        flex: 1;
+        background-color: green;
+        height: 90%;
+      }
+      .component-image {
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="setup-main-container">
+      <div class="setup-section-heading">HEADING</div>
+      <div class="individual-component-container">
+        <div
+          class="setup-individual-component1"
+          style="display: flex; justify-content: center; align-items: center;"
+        >
+          <div class="component-image">
+            <a href=" ">
+              <img
+                src="cfg-monitor.jpg"
+                alt="Amit"
+                style="border-radius: 50%; height: 50%; width: 50%;"
+              />
+            </a>
+          </div>
+          <button>LOL</button>
+        </div>
+        <div class="setup-individual-component2">CPU</div>
+        <div class="setup-individual-component3">ACC</div>
+      </div>
+    </div>
+  </body>
+</html>

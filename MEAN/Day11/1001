@@ -1,0 +1,110 @@
+Ajax Tutorial
+	AJAX allows you to send and receive data asynchronously without reloading the web page. So it is fast.
+
+	AJAX allows you to send only important information to the server not the entire page. 
+	So only valuable data from the client side is routed to the server side. 
+	It makes your application interactive and faster.
+
+Where it is used?
+	There are too many web applications running on the web that are using ajax technology like gmail, facebook,twitter, google map, youtube etc.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Understanding Synchronous vs Asynchronous
+	
+Synchronous (Classic Web-Application Model)
+	A synchronous request blocks the client until operation completes i.e. browser is unresponsive. 
+	In such case, javascript engine of the browser is blocked.
+
+Asynchronous (AJAX Web-Application Model)
+	An asynchronous request doesn’t block the client i.e. browser is responsive. 
+	At that time, user can perform another operations also. 
+	In such case, javascript engine of the browser is not blocked.
+----------------------------------------------------------------------------------
+AJAX Technologies
+
+As describe earlier, ajax is not a technology but group of inter-related technologies. AJAX technologies includes:
+	HTML/XHTML and CSS
+	DOM
+	XML or JSON
+	XMLHttpRequest
+	JavaScript
+
+HTML/XHTML and CSS
+	These technologies are used for displaying content and style. It is mainly used for presentation.
+
+DOM
+	It is used for dynamic display and interaction with data.
+
+XML or JSON
+	For carrying data to and from server. JSON (Javascript Object Notation) is like XML but short and faster than XML.
+
+XMLHttpRequest
+	For asynchronous communication between client and server. For more visit next page.
+
+JavaScript
+	Independently, it is used mainly for client-side validation.
+---------------------------------------------------------------------------------------------------------------------------------------
+Understanding XMLHttpRequest
+	An object of XMLHttpRequest is used for asynchronous communication between client and server.
+
+It performs following operations:
+	Sends data from the client in the background
+	Receives the data from the server
+	Updates the webpage without reloading it.
+
+Properties of XMLHttpRequest object
+	onReadyStateChange	
+	readyState	
+	reponseText
+	responseXML	
+
+Methods of XMLHttpRequest object
+	void open(method, URL)		
+	void open(method, URL, async)	
+	void open(method, URL, async, username, password)	
+	void send()	
+	void send(string)	
+	setRequestHeader(header,value)	
+--------------------------------------------------------------------------------
+How AJAX works?
+	User sends a request from the UI and a javascript call goes to XMLHttpRequest object.
+	HTTP Request is sent to the server by XMLHttpRequest object.
+	Server interacts with the database using JSP, PHP, Servlet, ASP.net etc.
+	Data is retrieved.
+	Server sends XML data or JSON data to the XMLHttpRequest callback function.
+	HTML and CSS data is displayed on the browser.
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

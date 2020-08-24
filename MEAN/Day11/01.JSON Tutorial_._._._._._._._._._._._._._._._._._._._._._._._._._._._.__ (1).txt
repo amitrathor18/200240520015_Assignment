@@ -1,0 +1,155 @@
+JSON Tutorial
+
+What is JSON
+	JSON stands for JavaScript Object Notation.
+	JSON is lightweight data-interchange format.
+
+JSON Example
+	
+File: first.json
+	{"employees":[  
+	    {"name":"Sonoo", "email":"sonoojaiswal1987@gmail.com"},  
+	    {"name":"Rahul", "email":"rahul32@gmail.com"},  
+	    {"name":"John", "email":"john32bob@gmail.com"}  
+	]}  
+--------------------------------------------------------------------------------------
+What is JSON
+	SON is an open standard for exchanging data on the web.
+
+What is JSON
+	JSON is lightweight and self describing.
+	JSON is originated from JavaScript.
+
+Features of JSON
+	Simplicity
+-------------------------------------------------
+JSON vs XML
+
+JSON	
+	JSON stands for JavaScript Object Notation.		
+	JSON is data-oriented.	
+	JSON supports array.	
+
+XML
+	XML stands for eXtensible Markup Language.
+	XML is less easy than JSON.
+	XML doesn't support array.
+
+Similarities between JSON and XML
+	Both are simple and open.
+	Both supports unicode. So internationalization is supported by JSON and XML both.
+-------------------------------------------------------------------------------------------------
+JSON Example
+
+JSON Object Example
+	
+The { (curly brace) represents the JSON object.
+	{  
+	    "employee": {  
+	        "name":       "sonoo",   
+	        "salary":      56000,   
+	        "married":    true  
+	    }  
+	}  
+
+JSON Array example
+	["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]  
+
+-------------------------------------------------------------------------------------------------------
+JSON Object
+	JSON object holds key/value pair.
+
+	{  
+	    "employee": {  
+	        "name":       "sonoo",   
+	        "salary":      56000,   
+	        "married":    true  
+	    }  
+	}  
+
+JSON Object with Strings
+	{  
+	        "name":       "sonoo",   
+	        "email":      "sonoojaiswal1987@gmail.com"  
+	}  
+
+JSON Object with Numbers
+	{  
+	"integer": 34,  
+	"fraction": .2145,  
+	"exponent": 6.61789e+0  
+	}  
+
+JSON Object with Booleans
+	{  
+	"first": true,  
+	"second": false  
+	}  
+
+JSON Nested Object Example
+	A JSON object can have another object also.
+-----------------------------------------------------------------
+JSON Array
+	
+JSON Array of Strings
+	["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]    
+
+JSON Array of Numbers
+	[12, 34, 56, 43, 95]    
+
+JSON Array of Booleans
+	[true, true, false, false, true]    
+
+JSON Array of Objects
+	{"employees":[    
+	    {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+	    {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+	    {"name":"John", "email":"john@gmail.com", "age":33},    
+	    {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+	]}  
+
+JSON Multidimensional Array
+	[    
+	 [ "a", "b", "c" ],   
+	 [ "m", "n", "o" ],   
+	 [ "x", "y", "z" ]   
+	]  
+---------------------------------------------------------
+JSON Comments
+	{  
+	    "employee": {  
+	        "name":       "Bob",   
+	        "salary":      56000,   
+	        "comments":    "He is a nice man"  
+	    }  
+	}  
+---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

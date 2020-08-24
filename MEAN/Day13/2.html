@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-image: url("https://picsum.photos/id/1050/1800/1400");
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+        }
+
+        .middle {
+            /* height: 30vh; */
+            width: 100vw;
+            flex-direction: column;
+
+            height: 100vh;
+
+        }
+
+        #design {
+            width: 50%;
+            height: 10vm;
+            background-color: rgba(177, 222, 233, 0.45);
+            color: rgb(5, 2, 2);
+            font-size: 5vm;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            border: thin;
+            border-radius: 5px;
+
+            align-items: center;
+            /* margin-top: 2px; */
+            display: none;
+
+            /* background-image: url("https://picsum.photos/id/1/200/300"); */
+        }
+
+        #parent {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            /* margin-top: 5px; */
+            border: thin;
+            overflow: scroll;
+        }
+
+        .Heading {
+            height: 10vh;
+            color: rgb(251, 251, 251);
+            /* color: turquoise; */
+            background-color: rgba(90, 88, 88, 0.4);
+            font-size: 4.5vh;
+            font-family: cursive;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border-radius: 10%; */
+
+
+        }
+
+        .all {}
+
+        .search {
+            /* margin-top: 3px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+
+
+        }
+
+        .box {
+            width: 50%;
+            opacity: 90%;
+            flex: 9;
+
+        }
+
+
+        .btnn {
+            width: 15%;
+            color: whitesmoke;
+            flex: 3;
+            font-size: 10px;
+
+            /* display: flex; */
+            /* justify-content: end; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all container-fluid">
+        <div class="middle col-12 d-flex justify-content-center align-items-center ">
+            <div class="Heading row-12 row-md-6">
+                How's the Weather ?
+
+            </div>
+            <div class="search row-12 row-md-6 mt-5 ">
+                <input type="text" placeholder="Enter City Name..." class="box form-control" id="input" />
+                <button class="btnn mt-1 btn-info btn-sm " type="btn" onclick="Weather()">Check
+                    Weather</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container row-12 row-md-6" id="parent">
+        <div id="design">Sample coment</div>
+    </div>
+    <script src="2.js"></script>
+
+</body>
+
+</html>

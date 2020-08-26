@@ -1,0 +1,79 @@
+
+Nth sudo code
+
+https://themarklee.com/2013/09/29/repeating-patterns-nth-child/
+
+for rotation of img
+
+https://codepen.io/vitoralberto/pen/OPYyYB?__cf_chl_jschl_tk__=bef549ddabb5848a958f3d975207ac7d12b643c6-1596630885-0-AVPrk9FyKm3pdP0YxS86rSni2D0fkOZ6xGrrHgG6Az2mBu0OfFzjPHDvEZGl3jJ-ynRHH1bDLSs7RwJDOe8vcPp1Gd-uGiQdu8F_0pUiMTLvQfHdLn_k2cOIMohaXr9GhTv946weh9p7oAr4GJ7rg-VjjaXNp-4Gtn0JWOzO0T66MlZXhXpknOk3wp9sVxx9frwP6jDEsRdkrXkvU2s1PXvB1N1gdu4mUUION4MvtH9AlxbPlZwS4XsCho78aZ46awCr3clFhiurjq9p0Aj3bivEC1QwWaCesRTNM1wFm9fsTjwYKFnORXVKjXZS6_zxQnQL3mgW6Njn0Dl2usapw7Ly0VLr2rlGPWTacW4kv_Y7
+
+Join Zoom Meeting
+https://us02web.zoom.us/w/82240762512?tk=QkaZjhCf27cHosXv0M5KCu7zXHQlOce4uVeY-L_rEno.DQIAAAATJe5ykBYwRkh0N1VZUFNVS0dsNC1hZ0dUbEFnAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=alV4MTUvS011K0o3MVVqWkdnaVJLUT09
+
+Meeting ID: 822 4076 2512
+Passcode: 638910
+
+https://alligator.io/css/clipping-with-clip-path/
+
+https://css-tricks.com/the-shapes-of-css/
+
+https://fontawesome.com/
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+
+JSON & XML
+AJAX & Callback
+
+https://youtu.be/Qq88kYlnY7Q
+
+$('input[type=checkbox]').on('change', function (e) {
+    if ($('input[type=checkbox]:checked').length > 3) {
+        $(this).prop('checked', false);
+        alert("allowed only 3");
+    }
+});
+
+<select name="Center" >
+      <option value="" disabled selected>Select</option>
+      <option value="coffee">kharghar</option>
+      <option value="tea">juhu</option>
+      <option value="milk">abc</option>
+
+https://docs.google.com/forms/d/e/1FAIpQLSdVu6nxF_Ghj6zVAsYFzvZaAqa0hzH83WOnCVX0BHdHriAhKQ/viewscore?viewscore=AE0zAgC-tdun4-tR0P7SIAOKxXVhstCuolvGkufgss7S
+
+koderoom.dev@gmail.com
+
+[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+
+Vue.JS NEW USE OF JS 
+
+Interview:-
+http://collabedit.com/hkdvx
+https://www.cdac.in/index.aspx?id=newRegister1
+Question Link : https://notepad.pw/cjson
+Omkar : http://collabedit.com/f72tf
+
+https://jsbin.com/socajenaye/edit?html,output
+XKCD API
+
+- title
+
+
+- transcript
+- img
+Solve: https://jsbin.com/socajenaye/edit?html,output
+
+
+open weather API
+https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&
+exclude={part}&appid={YOUR API KEY}
+
+
+https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&
+exclude=hourly,daily&appid=d16dea439eff4aaf6246afc4adce525a
+
+
+https://pro.openweathermap.org/data/2.5/forecast/hourly?q=pune&appid=d16dea439eff4aaf6246afc4adce525a
+
+https://api.openweathermap.org/data/2.5/weather?q=pune&appid=d16dea439eff4aaf6246afc4adce525a
